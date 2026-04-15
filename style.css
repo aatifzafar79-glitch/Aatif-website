@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 15px 40px;
+    color: white;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #00c6ff;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Services */
+.services {
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 25px;
+    background: #f4f4f4;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact */
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
