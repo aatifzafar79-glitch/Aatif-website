@@ -6,8 +6,27 @@
 
 body {
     font-family: Arial, sans-serif;
+header{
+background:#111;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00bfff;
+}
 /* Navbar */
 header {
     display: flex;
@@ -22,7 +41,19 @@ header ul {
     display: flex;
     list-style: none;
 }
+a{
+text-decoration:none;
+color:inherit;
+}
 
+.card{
+cursor:pointer;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
 header ul li {
     margin-left: 20px;
 }
@@ -38,34 +69,39 @@ header ul li a:hover {
 }
 
 /* Hero */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to right, #007bff, #00c6ff);
-    color: white;
+.hero{
+background:linear-gradient(to right,#007bff,#00c6ff);
+color:white;
+text-align:center;
+padding:100px 20px;
+width:100%;
 }
 
-.hero h2 {
-    font-size: 40px;
+.hero h2{
+font-size:48px;
+margin-bottom:10px;
 }
 
-.hero button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    border: none;
-    background: white;
-    color: #007bff;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: 0.3s;
+.hero p{
+font-size:22px;
+margin-bottom:20px;
 }
 
-.hero button:hover {
-    background: #007bff;
-    color: white;
-    transform: scale(1.1);
+.hero button{
+padding:12px 30px;
+border:none;
+background:white;
+color:#007bff;
+font-size:18px;
+font-weight:bold;
+border-radius:5px;
+cursor:pointer;
 }
 
+.hero button:hover{
+background:#111;
+color:white;
+}
 /* Services */
 .services {
     display: flex;
@@ -77,9 +113,15 @@ header ul li a:hover {
     flex: 1;
     padding: 25px;
     background: #f4f4f4;
+    color: black;
     text-align: center;
     border-radius: 10px;
     transition: 0.3s;
+}
+.card h2,
+.card h3,
+.card p{
+color:black;
 }
 
 .card:hover {
@@ -128,4 +170,52 @@ footer {
     header {
         flex-direction: column;
     }
+}.login-box{
+width:350px;
+background:white;
+padding:40px;
+margin:100px auto;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+border-radius:10px;
+}
+
+.login-box input{
+width:90%;
+padding:12px;
+font-size:16px;
+}
+
+.login-box button{
+padding:12px 30px;
+background:#007bff;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+.login-box button:hover{
+background:#111;
+}
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:30px;
+}
+
+.social-icons{
+margin-bottom:15px;
+}
+
+.social-icons a{
+color:white;
+font-size:28px;
+margin:0 15px;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+color:#00c6ff;
 }
