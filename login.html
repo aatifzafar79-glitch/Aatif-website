@@ -1,20 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login</title>
-<link rel="stylesheet" href="style.css">
+  <title>Login - Aatif Book Store</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial;
+      background: linear-gradient(to right, #2193b0, #6dd5ed);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .toggle {
+      margin-top: 15px;
+      cursor: pointer;
+      color: blue;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="login-box">
-<h2>Login</h2>
+<div class="box">
 
-<input type="text" placeholder="Username"><br><br>
-<input type="password" placeholder="Password"><br><br>
+  <!-- LOGIN -->
+  <div id="loginForm">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p class="toggle" onclick="showSignup()">Don't have an account? Signup</p>
+  </div>
 
-<button>Login</button>
+  <!-- SIGNUP -->
+  <div id="signupForm" class="hidden">
+    <h2>Signup</h2>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button onclick="signup()">Signup</button>
+    <p class="toggle" onclick="showLogin()">Already have an account? Login</p>
+  </div>
 
 </div>
+
+<script>
+function showSignup() {
+  document.getElementById("loginForm").classList.add("hidden");
+  document.getElementById("signupForm").classList.remove("hidden");
+}
+
+function showLogin() {
+  document.getElementById("signupForm").classList.add("hidden");
+  document.getElementById("loginForm").classList.remove("hidden");
+}
+
+function login() {
+  alert("Login Successful ✅");
+  window.location.href = "index.html";
+}
+
+function signup() {
+  alert("Signup Successful 🎉");
+  showLogin();
+}
+</script>
 
 </body>
 </html>

@@ -1,69 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Website</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Aatif Book Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-    <h1>Aatif Zafar</h1>
-    <nav>
-        <ul>
-            <a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-            
-        </ul>
-    </nav>
-</header>
-
-
-    <section class="hero">
-        <section class="services">
-   <h2>Welcome Aatif Zafar Web</h2>
-   <p>Login karke Books Access karo</p>
-   <a href="login.html"><button>Login Now</button></a>
-</section>
-
-<a href="webdesign.html">
-<div class="card">
-<h2>Web Design</h2>
-<p>Modern UI/UX design for your business</p>
-</div>
-</a>
-
-<a href="development.html">
-<div class="card">
-<h2>Development</h2>
-<p>Fast and secure website development</p>
-</div>
-</a>
-
-<a href="seo.html">
-<div class="card">
-<h2>SEO</h2>
-<p>Rank your website on Google easily</p>
-</div>
-</a>
-<footer>
-<div class="social-icons">
-
-<a href="https://www.instagram.com/az_aatif_18?igsh=MXg4OTb0ODRxemF2Ng=="><i class="fab fa-instagram"></i></a>
-
-<a href="https://www.facebook.com/profile.php?id=61586678377754"><i class="fab fa-facebook"></i></a>
-
-<a href="mailto:zafaraatif3@gmail.com"><i class="fas fa-envelope"></i></a>
-
-<a href="https://www.youtube.com/@HidayahHubOfficial8"><i class="fab fa-youtube"></i></a>
-
-<a href="https://x.com/Indiagreat28582"><i class="fab fa-x-twitter"></i></a>
-
+<!-- Navbar -->
+<div class="navbar">
+ <img src="images/logo.png" class="logo"> 
+  <div>
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </div>
 
-<p>© 2026 MyBrand</p>
-</footer>
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Welcome Aatif Book Store 📚</h1>
+  <p>Login karke Books Access karo</p>
+  <button onclick="goLogin()">Login Now</button>
+</div>
+<script>
+function goLogin() {
+  window.location.href = "login.html";
+}
+</script>
+
+<!-- Books Preview -->
+<div class="container">
+
+  <div class="card">
+    <h2>Math Book</h2>
+    <p>Class 10 Full Guide</p>
+    <a href="books/book1.pdf" target="_blank">📖 Read Book</a>
+  </div>
+
+  <div class="card">
+    <h2>Science Book</h2>
+    <p>Easy Notes</p>
+   <a href="books/book2.pdf"download>Download PDF</a> 
+  </div>
+
+  <div class="card">
+    <h2>English Book</h2>
+    <p>Grammar & Writing</p>
+    <a href="books/book3.pdf" download>Download PDF</a>
+  </div>
+
+</div>
+<!-- Footer -->
+<div class="footer">
+  <div class="social-icons">
+
+    <a href="https://instagram.com/az_aatif_18"target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://wa.me/917887062117" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="mailto:aatifzafar3@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@HidayahHubofficial8" target="_blank">
+      <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://twitter.com/Indiagreat28582" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+  </div>
+
+  <p>© 2026 MyBrand</p>
+</div>
+
